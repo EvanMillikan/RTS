@@ -24,10 +24,7 @@ public class Bakery{
         Timer t = new Timer();
         LinkedBlockingQueue<bun> coolingRack = new LinkedBlockingQueue<>(18);
         LinkedBlockingQueue<bun> shelf = new LinkedBlockingQueue<>(10);
-        
-        ScheduledExecutorService s = Executors.newScheduledThreadPool(2);
-        s.scheduleAtFixedRate(new baker(coolingRack), 0, 5000, TimeUnit.SECONDS);
-        s.scheduleAtFixedRate(new worker(coolingRack, shelf), 0, 1000, TimeUnit.SECONDS);
+       
                 
         int customerNo = 1;
         while(true){
