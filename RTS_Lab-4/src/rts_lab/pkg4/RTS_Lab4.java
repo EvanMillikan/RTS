@@ -32,7 +32,7 @@ public class RTS_Lab4 {
                 Future<Can> labelledCan = es.submit(new Labelling(sealedCan.get()));
                 labelledCan.get(); //Need to call get so that the process is blocked until labelledCan result is acquired
                 System.out.println("PROCESSING COMPLETE....CONTINUING ON ANOTHER CAN PRODUCTION");
-                //Complete 1 Loop (TEST)
+                //Complete 1 Loop (TEST333)
             }
             catch(Exception e){}
         }
