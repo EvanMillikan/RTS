@@ -14,6 +14,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 public class Stopwatch {
     public static void main(String[] args) {
+        LinkedBlockingQueue<Integer> s = new LinkedBlockingQueue();
         
     }
 }
