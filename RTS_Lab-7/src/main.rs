@@ -90,7 +90,6 @@ fn main() {
     for v in vec {
         let sd_clone = sd.clone();
         let mut val = 0.01; // Init value for all stocks
-
         std::thread::spawn(move || {
             let mut rng = rand::thread_rng();
             loop {
